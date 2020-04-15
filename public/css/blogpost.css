@@ -1,0 +1,53 @@
+.postcard{
+    
+    background: #1a1b1e !important;
+    box-shadow: -10px -10px 20px #242529, 10px 10px 10px rgb(0, 0, 0), 10px 10px 10px #151518 !important;
+    border-radius: 25px !important;
+    transition: .2s ease-in-out !important;
+    
+    
+  }
+  .postcard:hover{
+   
+			animation: sqw 2s infinite;
+	
+}
+@keyframes sqw {
+0% {
+	transform: translate(0, 0);
+}
+50% {
+	transform: translate(0, 10px);
+}
+100% {
+	transform: translate(0, 0);
+}
+  }
+
+.links{
+  text-decoration: none !important;
+  color: white !important;
+  font-weight: bold !important;
+}
+.links:hover{
+  color:grey !important;
+  font-weight: bold !important;
+}
+.lit{
+  text-decoration: none !important;
+  color: white !important;
+  font-weight: bold !important;
+}
+
+.jumbotron {
+  background-image: url("/bg_image/jumbo.jpg");
+  background-size: cover;
+  border-color: #151518 !important;
+}
+.hh1{
+  color: black !important;
+
+text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15) !important;
+color: #333333 !important;
+
+}
