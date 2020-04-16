@@ -37,7 +37,7 @@
 </div>
 
 
- <div class="contrainer text-white">
+ <div class="container text-white">
      <p>
          {!! $posts->body !!}
      </p>
