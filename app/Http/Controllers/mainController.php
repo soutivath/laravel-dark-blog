@@ -24,7 +24,7 @@ class mainController extends Controller
         $posts = Post::orderBy('post_id','desc')->paginate(8);
         $types = Type::with('posts')->get();
         
-        return view('page.main',\compact('posts',$posts))->with('types',$types);
+        return view('page.index',\compact('posts',$posts))->with('types',$types);
     }
     public function showPost($post_id)
     {
