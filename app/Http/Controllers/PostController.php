@@ -25,7 +25,7 @@ class PostController extends Controller
         $allType = count(Type::all());
         $allmember = count(User::all());
         $allstate = array('posts'=>$allpost,'comments'=>$allcomment,'types'=>$allType,'users'=>$allmember);
-        return view('page/admin/adminindex')->with('allstate',$allstate);
+        return view('page/admin/dashboard')->with('allstate',$allstate);
     }
     /**
      * Display a listing of the resource.
@@ -35,7 +35,7 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::orderBy('post_id','desc')->paginate(20);
-        return view('page/admin/post/adminindex',compact('posts',$posts));
+        return view('page/admin/post/postindex',compact('posts',$posts));
     }
 
     /**
